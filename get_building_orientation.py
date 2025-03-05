@@ -27,7 +27,7 @@ def get_road_orientation(location):
         - Handles API errors and missing road data gracefully.
     """
     # Model parameters
-    api_key = "AIzaSyBMINy7oPRKyOPW-wnZqQClXSUs11I9RBs"
+    api_key = "YOUR_GOOGLE_API"
     base_url = "https://roads.googleapis.com/v1/nearestRoads"
     params = {
         "points": f"{location[0]},{location[1]}",
@@ -124,7 +124,7 @@ def get_street_view_image(location, api_key, angle):
     # Compute the heading direction for the Street View API (ensuring it's within [0, 360] degrees)
     heading = (road_orientation + angle + 180) % 360
     # Google Maps API key (should be kept secure and not hardcoded in production)
-    api_key = "AIzaSyBMINy7oPRKyOPW-wnZqQClXSUs11I9RBs"
+    api_key = "YOUR_GOOGLE_API"
 
     # Define image capture parameters
     fov = 120          # Field of view (wider angle for more coverage)

@@ -476,7 +476,7 @@ class GUIMethods:
             pass
         else:
             # Input parameters
-            api_key = "AIzaSyBMINy7oPRKyOPW-wnZqQClXSUs11I9RBs"
+            api_key = "YOUR_GOOGLE_API"
             lat= self.ui.lat_value.text()
             lon= self.ui.lon_value.text() 
             url = "https://maps.googleapis.com/maps/api/streetview/metadata"
@@ -531,7 +531,7 @@ class GUIMethods:
             # Building coordinates
             location = (float(self.ui.lat_value.text()), float(self.ui.lon_value.text()))
             # API key is required; without it, access to GSV is not possible
-            api_key = "AIzaSyBMINy7oPRKyOPW-wnZqQClXSUs11I9RBs"  
+            api_key = "YOUR_GOOGLE_API"  
             
             # Image ID displayed values
             # left image
