@@ -11,7 +11,7 @@ This guideline utilizes [Anaconda](https://www.anaconda.com/) to facilitate the 
 ### *Windows*
 * Clone this repository
 * Open Anaconda Prompt
-* Create a virtual environment: conda create -n MY_VIRTUAL_ENVIRONMENT_NAME python=3.9.13 (e.g., conda create -n GEM_AI python=3.9.13)
+* *Create a virtual environment:* conda create -n MY_VIRTUAL_ENVIRONMENT_NAME python=3.9.13 (e.g., conda create -n GEM_AI python=3.9.13)
 
   ![conda](https://github.com/user-attachments/assets/69da3746-5967-4f68-b6c8-37bd168313f9)
 
@@ -24,7 +24,7 @@ conda activate YOUR_VIRTUAL_ENVIRONMENT_NAME
 ```
 ![image](https://github.com/user-attachments/assets/c0d77e7f-931c-472f-a144-a1bb84cbb406)
 
-* Assign path to the clone repository
+* Assign path to the cloned repository
 ```bash
 cd /d YOUR_REPO_PATH
 ```
