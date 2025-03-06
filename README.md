@@ -7,7 +7,8 @@ This guideline utilizes [Anaconda](https://www.anaconda.com/) to facilitate the 
 ## 1. Create a virtual environment 
 ### *Windows*
 * Open anaconda prompt
-* Type on the console: conda create -n MY_VIRTUAL_ENVIRONMENT_NAME python=3.9.13 (e.g., conda create -n GEM_AI python=3.9.13)
+* conda create -n MY_VIRTUAL_ENVIRONMENT_NAME python=3.9.13 (e.g., conda create -n GEM_AI python=3.9.13)
+  ![Conda example](guidelines_img/conda.jpg)
 * pip install -r requirements.txt
 # Citation
 Daniel Gómez. (2025). dangomezm/GEM_AI_Toolkit: GEM_V1 (GEM_V1). Zenodo. https://doi.org/10.5281/zenodo.14977499
