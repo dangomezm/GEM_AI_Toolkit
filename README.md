@@ -41,8 +41,19 @@ python main.py
 ![image](https://github.com/user-attachments/assets/caf7ec75-bd96-4406-a881-a3a97336b7ee)
 
 ### *MacOS*
-
-### *Linux*
+The process would be the same as the one executed for Windows, up until the activation of the virtual environment
+* Assign path to the cloned repository
+```bash
+cd ~/YOUR_REPO_PATH
+```
+* Install dependencies
+```bash
+pip install -r requirements.txt
+```
+* Execute GUI
+```bash
+python3 main.py
+```
 
 # Citation
 Daniel Gómez. (2025). dangomezm/GEM_AI_Toolkit: GEM_V1 (GEM_V1). Zenodo. https://doi.org/10.5281/zenodo.14977499
