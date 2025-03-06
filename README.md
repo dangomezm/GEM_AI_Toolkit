@@ -58,23 +58,44 @@ pip3 install -r requirements.txt
 ```bash
 python3 main.py
 ```
-## 2. Methods available
+## 2. Inspection methods available
 ### Polygon method
-*Currently unavailable*
-
+#### *Currently unavailable*
+* Select the folder where the outputs will be saved by clicking the ***Project Folder*** button.
+* Set the inspection method by clicking the ***Insp. Method*** button and choosing the polygon method
+* Click on the ***Set Coord.*** button and provide the input files. There are two options for this method:
+  #### ***1. Rectangle by two points***
+  The user provides two points in the **format (lat, lon)**, and the tool creates a rectangle, extracting all the building footprints available within it for subsequent inspection.
+  #### ***2. Polygon coordinates using a csv file***
+  The user provides a CSV file with the vertex coordinates (which must be uploaded in either clockwise or counterclockwise order). The tool extracts all the building footprints available within the polygon in order to performs virtual inspections. The required file format is attached below.
+  
+  ![image](https://github.com/user-attachments/assets/2e4e29a9-ebc9-455f-8c60-63f54ff9cb61)
+  
+* The number of inspections is based on the ***sample size***, which should be provided by the user. The available footprint population is displayed after clicking the ***Load Data*** button, allowing the user to choose the sample size or decide if the inspection should cover the entire building population within the area. The format of the file is presented below.
+* Upload the images by clicking the ***Next Building*** button
+* Chose building feature for each combobox (e.g., concrete as LLRS material)
+* Continue the process by clicking the ***Next Building*** button until the inspections are complete, or save your progress by clicking the ***Save Inspection*** button.
+* The results will be saved with the name of the city and contry (e.g., Barranquilla_Colombia).
+* The saved file will contain all the building features, city, country, coordinates and the path to the building image. Furthermore, it will be uploaded when the GUI starts again, allowing the inspection process to continue from where it was finished. This is why it is important to save the inspection before closing the GUI.
+  
 ### Specific location method
-*Currently unavailable*
+#### *Currently unavailable*
+* Select the folder where the outputs will be saved by clicking the ***Project Folder*** button.
+* Set the inspection method by clicking the ***Insp. Method*** button and choosing the specific coordinates method
+* Click on the ***Set Coord.*** button and provide a *.csv file containing the ID and coordinates of the building images (with the same structure presented in polygon method, by clicking the ***Upload building coordinates*** button.
+* Upload the images by clicking the ***Next Building*** button
+* Chose building feature for each combobox (e.g., concrete as LLRS material)
+* Continue the process by clicking the ***Next Building*** button until the inspection is complete, or save your progress by clicking the ***Save Inspection*** button.
+* The results will be saved with the name given in the ***Output name*** cell, which by default is "Specific", in a *.csv file. This file will contain all the building features, city, country, coordinates and the path to the building image. Furthermore, it will be uploaded when the GUI starts again, allowing the inspection process to continue from where it was finished. This is why it is important to save the inspection before closing the GUI.
 
 ### Local images method
 * Select the folder where the outputs will be saved by clicking the ***Project Folder*** button.
 * Set the inspection method by clicking the ***Insp. Method*** button and choosing the local method
-* Click on the ***Set Coord.*** button and provide the input files by clicking the Select ***Image Folder*** button and selecting the folder where the building images are stored on the local device. Then, by clicking the ***Upload Building Information*** button, the user should provide a *.csv file containing the ID and coordinates of the building images (as shown in the required structure attached below). Finally, select the number of images available per location (1 to 3).
-
-![image](https://github.com/user-attachments/assets/514206a9-2ab3-4b7d-91d4-7921ab6a8f0c)
-
+* Click on the ***Set Coord.*** button and provide the input files by clicking the Select ***Image Folder*** button and selecting the folder where the building images are stored on the local device. Then, by clicking the ***Upload Building Information*** button, the user should provide a *.csv file containing the ID and coordinates of the building images (as shown in polygon method). Finally, select the number of images available per location (1 to 3).
 * Upload the images by clicking the ***Next Building*** button
-* Chose building feature for each combobox
+* Chose building feature for each combobox (e.g., concrete as LLRS material)
 * Continue the process by clicking the ***Next Building*** button until the inspection is complete, or save your progress by clicking the ***Save Inspection*** button.
+* The results will be saved with the name given in the ***Output name*** cell, which by default is "Local", in a *.csv file. This file will contain all the building features, city, country, coordinates and the path to the building image. Furthermore, it will be uploaded when the GUI starts again, allowing the inspection process to continue from where it was finished. This is why it is important to save the inspection before closing the GUI.
 
 ### AI powered Option 
 This option is enabled by clicking the ***AI Powered*** checkbox. Then, each time the ***Next Building*** button is clicked, all the building features will be predicted using a deep learning model. Currently, all models use [DenseNet201](https://pytorch.org/vision/0.20/models/generated/torchvision.models.densenet201.html) and leverage transfer learning from [ImageNet](https://www.image-net.org/), followed by fine-tuning. However, the user should still verify that these features match the ground truth labels and choose the image quality.
