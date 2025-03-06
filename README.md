@@ -6,12 +6,13 @@ This guideline utilizes [Anaconda](https://www.anaconda.com/) to facilitate the 
 [Download Anaconda](https://www.anaconda.com/download/success), and installation instructions can be found in [Installing Anaconda](https://www.anaconda.com/docs/getting-started/anaconda/install#macos-linux-installation). Once Anaconda has been installed, it is necessary to create a virtual environment. *Note: Python 3.9.13 can also be installed directly, and the virtual environment can be created using your preferred method* 
 ## 1. Create a virtual environment 
 ### *Windows*
-* Open anaconda prompt
+* Open Anaconda Prompt
 * conda create -n MY_VIRTUAL_ENVIRONMENT_NAME python=3.9.13 (e.g., conda create -n GEM_AI python=3.9.13)
 
   ![conda](https://github.com/user-attachments/assets/69da3746-5967-4f68-b6c8-37bd168313f9)
 
-  
-* pip install -r requirements.txt
+```bash
+pip install -r requirements.txt
+``` 
 # Citation
 Daniel Gómez. (2025). dangomezm/GEM_AI_Toolkit: GEM_V1 (GEM_V1). Zenodo. https://doi.org/10.5281/zenodo.14977499
