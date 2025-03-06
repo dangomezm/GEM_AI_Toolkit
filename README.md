@@ -58,6 +58,25 @@ pip3 install -r requirements.txt
 ```bash
 python3 main.py
 ```
+## 2. Methods available
+### Polygon method
+*Currently unavailable*
+
+### Specific location method
+*Currently unavailable*
+
+### Local images method
+* Select folder where the outputs going to be saved
+* Select the inspection method and chose local method
+* Select the number of image available per location (1 to 3)
+* Select folder where are the images
+* Select the *.csv file where are the coordinates and ID of the building
+* Click next button
+* Chose building feature for each combobox
+* Continung process and click save button for save inspection
+
+### AI powered option 
+With this option each time next button is clicked, all the building feature would be predicted using a deep learning model, currently all the model use DenseNet201. However, the user still should check that this features match with the ground-true labels and chose what is the quality of the image
 
 # Citation
 Daniel Gómez. (2025). dangomezm/GEM_AI_Toolkit: GEM_V1 (GEM_V1). Zenodo. https://doi.org/10.5281/zenodo.14977499
