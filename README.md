@@ -69,7 +69,8 @@ python3 main.py
 * Select the folder where the outputs will be saved by clicking the ***Project Folder*** button.
 * Set the inspection method by clicking the ***Insp. Method*** button and choosing the local method
 * Click on the ***Set Coord.*** button and provide the input files by clicking the Select ***Image Folder*** button and selecting the folder where the building images are stored on the local device. Then, by clicking the ***Upload Building Information*** button, the user should provide a *.csv file containing the ID and coordinates of the building images (as shown in the required structure attached below). Finally, select the number of images available per location (1 to 3).
-  ![image](https://github.com/user-attachments/assets/514206a9-2ab3-4b7d-91d4-7921ab6a8f0c)
+
+* ![image](https://github.com/user-attachments/assets/514206a9-2ab3-4b7d-91d4-7921ab6a8f0c)
 
 * Upload the images by clicking the ***Next Building*** button
 * Chose building feature for each combobox
