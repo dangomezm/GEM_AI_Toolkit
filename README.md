@@ -50,6 +50,10 @@ cd ~/YOUR_REPO_PATH
 ```bash
 pip install -r requirements.txt
 ```
+In case pip is not working, you can also try:
+```bash
+pip3 install -r requirements.txt
+```
 * Execute GUI
 ```bash
 python3 main.py
