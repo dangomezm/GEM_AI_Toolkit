@@ -1,8 +1,6 @@
 # GEM AI Toolkit
 This is the beta version of the toolkit for building feature prediction using facade images, for seismic risk assessment with AI. The Graphic User Interface enables a fast assessment of the building, including an object detection module, to isolate the building of interest.
 
-![image](https://github.com/user-attachments/assets/e809d08e-fe5a-466d-bc86-b74b14c95796)
-
 # How to use
 This guideline utilizes [Anaconda](https://www.anaconda.com/) to facilitate the configuration of the recommended virtual environment for working with AI. It can be downloaded for various operating systems from  
 [Download Anaconda](https://www.anaconda.com/download/success), and installation instructions can be found in [Installing Anaconda](https://www.anaconda.com/docs/getting-started/anaconda/install#macos-linux-installation). Once Anaconda has been installed, it is necessary to create a virtual environment. *Note: Python 3.9.13 can also be installed directly, and the virtual environment can be created using your preferred method* 
